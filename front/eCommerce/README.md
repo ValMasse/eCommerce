@@ -1,4 +1,8 @@
-# ECommerce
+###### ---------- ECOMMERCE
+###### ---------- 
+###### ---------- ECommerce project - started in january 2022
+###### ---------- Front with angular & backend with Java spring boot
+###### ---------- Database MongoDB --> with Docker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
