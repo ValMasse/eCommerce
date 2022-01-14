@@ -1,7 +1,7 @@
 package com.masse.valentin.ecommerce.configuration;
 
-import com.masse.valentin.ecommerce.repositories.AddressRepository;
-import com.masse.valentin.ecommerce.services.impl.AddressService;
+import com.masse.valentin.ecommerce.repositories.CategoryRepository;
+import com.masse.valentin.ecommerce.services.impl.CategoryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class ServicesConfig {
 
     @Bean
-    public AddressService addressServiceFactory(AddressRepository repo){
-        return new AddressService(repo);
+    public CategoryService categoryServiceFactory(CategoryRepository repo){
+        return new CategoryService(repo);
     }
 }
