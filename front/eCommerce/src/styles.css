@@ -5,4 +5,15 @@ body {
     background-image: url("../src/assets/img/compta-e-commerce-expert-comptable.jpg");
     background-size: cover;
     height: 100vh;
+    font-family: Gandia-Bold, Margita-Regula, cursive;
+}
+
+@font-face {
+    font-family: Margita-Regula;
+    src: url("../src/assets/fonts/Margita-Regular.otf");
+}
+
+@font-face {
+    font-family: Gandia-Bold;
+    src: url("../src/assets/fonts/Gandia-Bold.otf");
 }
