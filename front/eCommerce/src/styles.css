@@ -4,4 +4,5 @@
 body {
     background-image: url("../src/assets/img/compta-e-commerce-expert-comptable.jpg");
     background-size: cover;
+    height: 100vh;
 }
