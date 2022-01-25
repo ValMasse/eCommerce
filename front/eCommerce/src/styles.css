@@ -2,7 +2,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
-    background-image: url("../src/assets/img/compta-e-commerce-expert-comptable.jpg");
+    background-image: url("../src/assets/img/ecomm.jpg");
     background-size: cover;
     height: 100vh;
     font-family: Gandia-Bold, Margita-Regula, cursive;
