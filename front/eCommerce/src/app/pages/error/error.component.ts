@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-error',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  public timer: number = 10000;
 
   ngOnInit(): void {
+
+    setTimeout(() => {
+        this.router.navigateByUrl("/home");
+    }, this.timer);
   }
+
+
 
 }
