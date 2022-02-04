@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      database: eCommerce
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
