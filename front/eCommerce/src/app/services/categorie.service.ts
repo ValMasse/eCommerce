@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Category } from '../models/category.entity';
 import { environment } from 'src/environments/environment';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,17 +19,17 @@ export class CategorieService {
     return this.http.get<Category>(`${environment.apiUrl}/categories/${id}`);
   }
 
-  public create(category: Category){
-    return this.http.post<Category>(`${environment.apiUrl}/categories/`, category);
-  }
+  // public create(category: Category){
+  //   return this.http.post<Category>(`${environment.apiUrl}/categories/`, category);
+  // }
 
-  public update(id: string, category: Category){
-    return this.http.put<Category>(`${environment.apiUrl}/categories/${id}`, category);
-  }
+  // public update(id: string, category: Category){
+  //   return this.http.put<Category>(`${environment.apiUrl}/categories/${id}`, category);
+  // }
 
-  public delete(id: string){
-    return this.http.delete<Category>(`${environment.apiUrl}/categories/${id}`);
-  }
+  // public delete(id: string){
+  //   return this.http.delete<Category>(`${environment.apiUrl}/categories/${id}`);
+  // }
 
 
 }

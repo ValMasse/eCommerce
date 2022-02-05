@@ -8,6 +8,8 @@ import { ErrorComponent } from './pages/error/error.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
