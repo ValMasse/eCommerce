@@ -1,0 +1,17 @@
+h5 {
+    text-align: center;
+}
+
+a {
+    margin-left: 40px;
+}
+
+img {
+    height: 200px;
+}
+
+#cartes {
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 12px;
+}
