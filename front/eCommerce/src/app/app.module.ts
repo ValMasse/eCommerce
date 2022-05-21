@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -10,6 +9,9 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './components/category/category.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { AddProductFormComponent } from './modals/add-product-form/add-product-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,16 @@ import { CategoryComponent } from './components/category/category.component';
     HeaderComponent,
     FooterComponent,
     CategoriesComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProductsComponent,
+    AddProductFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

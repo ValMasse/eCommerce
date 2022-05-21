@@ -13,5 +13,6 @@ img {
 #cartes {
     display: inline-block;
     margin-left: 12px;
-    margin-top: 12px;
+    margin-top: 10px;
+    margin-bottom: 6px;
 }
