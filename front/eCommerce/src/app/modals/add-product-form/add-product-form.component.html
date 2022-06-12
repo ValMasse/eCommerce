@@ -1,1 +1,32 @@
-<p>add-product-form works!</p>
+<form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+    <h4>Création d'un nouveau produit</h4>
+    <div id="formulaire">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Nom du Produit</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Descritpion</label>
+                <textarea type="text" class="form-control" formControlName="description"></textarea>
+            </div>
+            <div class="form-group col-md-6">
+                <label>URL de l'image du Produit</label>
+                <input type="text" class="form-control" formControlName="img" placeholder="http://www.exemple.jpg">
+            </div>
+            <div class="form-group col-md-4" formGroupName="category">
+                <label>Catégorie</label>
+                <select class="form-control" formControlName="id">
+                    <ng-container *ngFor="let category of categories">
+                        <option selected [value]="category.id">{{category.name | uppercase}}</option>
+                    </ng-container>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+    <!-- <button (click)="close()" class="btn btn-danger">Annuler</button> -->
+
+    <pre>{{ closeResult }}</pre>
+</form>

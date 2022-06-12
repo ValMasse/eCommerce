@@ -12,6 +12,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { AddProductFormComponent } from './modals/add-product-form/add-product-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductComponent } from './component/product/product.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CategoriesComponent,
     CategoryComponent,
     ProductsComponent,
-    AddProductFormComponent
+    AddProductFormComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
