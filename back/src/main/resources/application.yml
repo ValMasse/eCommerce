@@ -2,6 +2,8 @@ spring:
   data:
     mongodb:
       database: eCommerce
+      host: localhost
+      port: 27017
 logging:
   level:
     org.springframework.data.mongodb.core.MongoTemplate: DEBUG

@@ -2,10 +2,12 @@ version: '3'
 
 services:
     mongo:
+        container_name: eCommerce
         image: mongo
         ports:
             - "27017:27017"
     mongo-express:
+        container_name: mongo_express_eCommerce
         image: mongo-express
         depends_on:
             - mongo

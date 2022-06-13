@@ -18,6 +18,7 @@ public class Category {
     @Id
     private String id;
     private String name;
+    private String image;
 
     @DBRef
     private List<Product> products;

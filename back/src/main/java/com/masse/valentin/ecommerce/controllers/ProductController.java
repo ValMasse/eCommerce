@@ -16,9 +16,7 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-    public ProductController(ProductService service) {
-        this.service = service;
-    }
+    //public ProductController(ProductService service) {this.service = service;}
 
     @GetMapping
     public List<Product> findAll(){
