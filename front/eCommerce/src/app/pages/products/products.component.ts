@@ -25,7 +25,6 @@ export class ProductsComponent implements OnInit {
     const modal = this.modalService.open(AddProductFormComponent, {
       size : 'lg',
     });
-    
   }
   
   initProducts(){

@@ -1,4 +1,6 @@
-<button (click)="open()">Ajouter un Produit</button>
+<div>
+    <button class="btn btn-warning" (click)="open()">Ajouter un Produit</button>
+</div>
 <ng-container *ngFor="let product of products">
     <app-product [product]="product"></app-product>
 </ng-container>

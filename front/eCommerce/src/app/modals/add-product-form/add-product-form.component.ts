@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Category } from 'src/app/models/category.entity';
 import { CategorieService } from 'src/app/services/categorie.service';
 import { ProductService } from 'src/app/services/product.service';
@@ -19,9 +18,8 @@ export class AddProductFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private categoryService: CategorieService,
-    private productService: ProductService,
-    private modalService: NgbModal
-    ) { 
+    private productService: ProductService
+        ) { 
     this.addProductForm = this.fb.group({
       name: ['', Validators.required],
       description: ['', Validators.required],
