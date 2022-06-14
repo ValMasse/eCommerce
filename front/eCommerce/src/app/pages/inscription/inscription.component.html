@@ -1,0 +1,26 @@
+<form [formGroup]="subscriptionForm" (ngSubmit)="register()">
+    <h4>FORMULAIRE D'INSCRIPTION</h4>
+    <div id="formulaire">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control" formControlName="firstname">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Nom</label>
+                <input type="text" class="form-control" formControlName="lastname">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Mot de Passe</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">S'enregistrer</button>
+    <!-- <button (click)="close()" class="btn btn-danger">Annuler</button> -->
+</form>

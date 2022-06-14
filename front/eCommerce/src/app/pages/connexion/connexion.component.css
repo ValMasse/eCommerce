@@ -1,0 +1,25 @@
+#formulaire, h4 {
+    text-align: center;
+}
+
+button {
+    margin: 30px 0 100px -20px;
+}
+
+form {
+    text-align: center;
+}
+
+.col-md-6 {
+    margin-left: 370px;
+}
+
+h4 {
+    margin: 50px 0 30px -30px;
+    text-shadow: white 0 -2px;
+    text-decoration: underline;
+}
+
+label, input {
+    margin-bottom: 5px;
+}

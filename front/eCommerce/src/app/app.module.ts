@@ -13,6 +13,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { AddProductFormComponent } from './modals/add-product-form/add-product-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './component/product/product.component';
+import { ConnexionComponent } from './pages/connexion/connexion.component';
+import { InscriptionComponent } from './pages/inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProductComponent } from './component/product/product.component';
     CategoryComponent,
     ProductsComponent,
     AddProductFormComponent,
-    ProductComponent
+    ProductComponent,
+    ConnexionComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,

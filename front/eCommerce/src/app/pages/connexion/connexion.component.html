@@ -1,0 +1,18 @@
+<form [formGroup]="signinForm" (ngSubmit)="signIn()">
+    <h4>CONNEXION</h4>
+    <div id="formulaire">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Mot de Passe</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Se Connecter</button>
+    <!-- <button (click)="close()" class="btn btn-danger">Annuler</button> -->
+</form>

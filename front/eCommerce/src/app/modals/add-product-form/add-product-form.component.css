@@ -1,5 +1,22 @@
+button {
+    margin: 30px 0 100px 20px;
+}
+
+.col-md-6, .col-md-4 {
+    margin-left: 90px;
+    width: 80%;
+}
+
 h4 {
-    color: blue;
+    margin: 50px 0 70px 30px;
+    text-decoration: underline;
     text-align: center;
-    margin: 10px 0 20px 0;
+}
+
+label, input, textarea {
+    margin-bottom: 12px;
+}
+
+form {
+    text-align: center;
 }
